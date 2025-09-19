@@ -7,6 +7,7 @@ export const defaultConfig: ThemeConfig = {
   site: {
     title: '活版印字',
     subtitle: 'Typography',
+    tabtitle: '活版印字 - Typography',
     author: 'Moeyua',
     description: 'Rediscory the beauty of typography',
     website: 'https://astro-theme-typography.vercel.app/',

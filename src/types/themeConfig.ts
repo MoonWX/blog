@@ -29,6 +29,7 @@ export type UserConfig = DeepPartial<ThemeConfig>
 export interface ConfigSite {
   title: string
   subtitle: string
+  tabtitle: string
   author: string
   description: string
   website: string

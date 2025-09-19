@@ -4,6 +4,7 @@ export const userConfig: Partial<UserConfig> = {
   site: {
     title: '代码和远方',
     subtitle: 'MoonWX',
+    tabtitle: 'MoonWX\'s Blog',
     author: 'MoonWX',
     description: 'Code and Alive',
     website: 'https://blog.moonwx.net/',
@@ -39,8 +40,9 @@ export const userConfig: Partial<UserConfig> = {
     categoryMap: [{ name: '', path: '' }],
     footer: [
       '© 2022 - %year <a target="_blank" href="%website">%author</a>',
+      'Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.',
       'Theme <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a> by <a target="_blank" href="https://moeyua.com">Moeyua</a>',
-      'Proudly published with <a target="_blank" href="https://astro.build/">Astro</a>',
+      'Published with <a target="_blank" href="https://astro.build/">Astro</a>',
     ],
   },
   appearance: {
