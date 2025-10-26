@@ -1,28 +1,46 @@
+/**
+ * Update theme from upstream repository
+ * Usage: pnpm update-theme
+ */
+
 import { execSync } from 'node:child_process'
+import fs from 'node:fs'
+import path from 'node:path'
 import process from 'node:process'
 
+// Check and set up the remote repository
 try {
-  // 检查是否已经添加了模板仓库
-  execSync('git remote | grep template', { stdio: 'ignore' })
+  execSync('git remote get-url upstream', { stdio: 'ignore' })
 }
 catch {
-  // 如果没有添加，则添加模板仓库
-  execSync(
-    'git remote add template https://github.com/moeyua/astro-theme-typography.git',
-    { stdio: 'inherit' },
-  )
+  execSync('git remote add upstream https://github.com/radishzzz/astro-theme-retypeset.git', { stdio: 'inherit' })
 }
 
+// Update theme from upstream repository
 try {
-  // 获取模板仓库的最新更改
-  execSync('git fetch template', { stdio: 'inherit' })
+  execSync('git fetch upstream', { stdio: 'inherit' })
 
-  // 将模板仓库的最新更改合并到当前分支
-  execSync('git merge template/main --allow-unrelated-histories', {
-    stdio: 'inherit',
-  })
+  const beforeHash = execSync('git rev-parse HEAD', { encoding: 'utf8' }).trim()
+  execSync('git merge upstream/master --allow-unrelated-histories', { stdio: 'inherit' })
+  const afterHash = execSync('git rev-parse HEAD', { encoding: 'utf8' }).trim()
+
+  if (beforeHash === afterHash) {
+    console.log('✅ Already up to date')
+  }
+  else {
+    console.log('✨ Updated successfully')
+  }
 }
 catch (error) {
-  console.error('更新主题时出错:', error)
-  process.exit(1)
+  // Check if there's a merge conflict
+  const gitDir = execSync('git rev-parse --git-dir', { encoding: 'utf8' }).trim()
+  const mergeHeadPath = path.join(gitDir, 'MERGE_HEAD')
+
+  if (fs.existsSync(mergeHeadPath)) {
+    console.log('⚠️ Update fetched with merge conflicts. Please resolve manually')
+  }
+  else {
+    console.error('❌ Update failed:', error)
+    process.exit(1)
+  }
 }

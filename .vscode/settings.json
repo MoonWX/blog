@@ -1,11 +1,4 @@
 {
-  "[markdown]": {
-    "editor.quickSuggestions": {
-      "comments": "on",
-      "other": "on",
-      "strings": "on"
-    }
-  },
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
   "editor.formatOnSave": false,
@@ -53,6 +46,80 @@
     "pcss",
     "postcss"
   ],
+
+  // Use workspace TypeScript version instead of built-in
   "typescript.tsdk": "node_modules/typescript/lib",
-  "astro.updateImportsOnFileMove.enabled": true
+
+  // Custom dictionary words for spell checker
+  "cSpell.words": [
+    "abbrlink",
+    "antfu",
+    "apiflash",
+    "apos",
+    "astrojs",
+    "attributify",
+    "autocorrect",
+    "backref",
+    "bbbi",
+    "bilibili",
+    "bitdepth",
+    "Blockquotes",
+    "brackethighlighter",
+    "bvid",
+    "canvaskit",
+    "Cpath",
+    "Csvg",
+    "dhakar",
+    "Disqus",
+    "esno",
+    "Español",
+    "framespacing",
+    "Français",
+    "Frontmatter",
+    "Fuwari",
+    "Giscus",
+    "gtag",
+    "heti",
+    "katex",
+    "Lightbox",
+    "lokesh",
+    "lqip",
+    "mdast",
+    "msrc",
+    "msvalidate",
+    "ndarray",
+    "nocss",
+    "noopener",
+    "noreferrer",
+    "Noto",
+    "Oklab",
+    "oklch",
+    "partytown",
+    "playbtn",
+    "prettylights",
+    "qwik",
+    "radishzz",
+    "radishzzz",
+    "rehype",
+    "reimagines",
+    "Retipografía",
+    "retypeset",
+    "Roundhand",
+    "Segoe",
+    "shiki",
+    "srcset",
+    "STIX",
+    "stylesheet",
+    "sublimelinter",
+    "Twikoo",
+    "umami",
+    "unocss",
+    "Vercel",
+    "videoid",
+    "vite",
+    "waline",
+    "webp",
+    "Переверстка",
+    "Русский"
+  ]
 }

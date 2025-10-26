@@ -1,211 +1,89 @@
-# Typography
+# Retypeset
 
-<p align='center'>
-  <img src='./public/typograph-og.jpg' alt='Typography' width='600'/>
-</p>
+![Cover Image](assets/images/v1/retypeset-en-desktop.webp)
+![Cover Image](assets/images/v1/retypeset-en-mobile.webp)
 
-<h6 align='center'>
-<a href="https://astro-theme-typography.vercel.app/">Live Demo</a>
-</h6>
-<h5 align='center'>
-<b>This work is rewrite from <a href="https://github.com/sumimakito/hexo-theme-typography">hexo-theme-Typography</a></b>
-</h5>
-<p align='center'>
-<b>English</b> | <a href="./README.zh-CN.md">简体中文</a>
-</p>
+[简体中文](assets/docs/README.zh.md)｜[繁体中文](assets/docs/README.zh-tw.md)｜[日本語](assets/docs/README.ja.md)｜[Español](assets/docs/README.es.md)｜[Français](assets/docs/README.fr.md)｜[Русский](assets/docs/README.ru.md)
 
-## Features
-
-- Build with **Astro**, **TypeScript** and **UnoCSS**
-- **Fast**. 100% [Pagespeed Score](https://pagespeed.web.dev/analysis/https-astro-theme-typography-vercel-app/j34nq9tx0s?form_factor=desktop).
-- **Typography** Derived from prevalent Chinese typographic norms and aims to provide an enhanced reading experience for website visitors.
-- **Responsive**. Responsive and works well on all screen sizes.
-- **Accessible**. A well thought out semantic and accessible content.
-- **SEO friendly**.Open Graph and Twitter Cards support for a better social sharing experience.
-- **Sitemap** and **RSS feed** for search engines.
-- i18n support.
-- Support Disqus, Giscus, Twikoo as comment service.
-- Dark mode support.
+Retypeset is a static blog theme based on the [Astro](https://astro.build/) framework. Inspired by [Typography](https://astro-theme-typography.vercel.app/), Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.
 
 ## Demo
 
-> Submit a PR to add your blog Demo.
+- [Retypeset](https://retypeset.radishzz.cc/en/)
+- [Retipografía](https://retypeset.radishzz.cc/es/)
+- [Переверстка](https://retypeset.radishzz.cc/ru/)
+- [重新编排](https://retypeset.radishzz.cc/)
+- [重新編排](https://retypeset.radishzz.cc/zh-tw/)
+- [再組版](https://retypeset.radishzz.cc/ja/)
 
-- [Live Demo](https://astro-theme-typography.vercel.app/)
-- [My Blog](https://blog.moeyua.com/)
-- [Julyfun's Blog (how to fully build this blog using `bun` in minutes)](https://julyfun.fun/posts/%E5%85%89%E9%80%9F%E6%90%AD%E5%BB%BA%E8%BF%99%E6%A0%B7%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/)
-- [Jinx's Blog](https://blog.mytest.cc/)
-- [Unconventional Reading Notes](https://books.beyondxin.top/)
+## Features
+
+- Built with Astro and UnoCSS
+- Support for SEO, Sitemap, OpenGraph, RSS, MDX, LaTeX, Mermaid, and TOC
+- i18n support
+- Light / Dark mode
+- Elegant view transitions
+- Rich theme customization
+- Optimized typography
+- Responsive design
+- Comment system
+
+## Performance
+
+<br>
+<p align="center">
+  <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fen%2F&form_factor=desktop">
+    <img width="710" alt="Retypeset Lighthouse Score" src="assets/images/retypeset-lighthouse-score.svg">
+  <a>
+</p>
 
 ## Getting Started
 
-Typography is a minimal, responsive and SEO-friendly Astro blog theme. This guide will help you get started with a new project.
+1. [Fork](https://github.com/radishzzz/astro-theme-retypeset/fork) this repository, or use this template to create a new repository.
+2. Run the following commands in your terminal:
 
-### Quick Start
+   ```bash
+   # Clone the repository
+   git clone <repository-url>
 
-You can fork the repository to your account by clicking the Fork button in the upper right corner, click the button below, select the repository you just forked, click the Import button, and you will be taken to the project configuration page.
+   # Navigate to the project directory
+   cd <repository-name>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
+   # Install pnpm globally (if not already installed)
+   npm install -g pnpm
 
-Or you can refer to the [Astro](https://docs.astro.build/guides/deploy/) documentation to deploy to your favorite platform.
+   # Install dependencies
+   pnpm install
 
-### Add post
+   # Start the development server
+   pnpm dev
+   ```
 
-You can add content by creating a new markdown file in `src/content/posts`. The file need metadata in the frontmatter, like this:
+3. Refer to the [Theme Guide](https://retypeset.radishzz.cc/en/posts/theme-guide/) to customize your blog and create new posts.
+4. Refer to the [Astro Deployment Guides](https://docs.astro.build/en/guides/deploy/) to deploy your blog to Netlify, Vercel, or other platforms.
 
-```md
----
-title: title
-pubDate: 2021-08-01
-categories: ["article"]
-description: "description"
----
-```
+&emsp;[![Deploy to Netlify](assets/images/deploy-netlify.svg)](https://app.netlify.com/start) [![Deploy to Vercel](assets/images/deploy-vercel.svg)](https://vercel.com/new)
 
-Or, you can use the following command in your terminal to create a new post:
+## Updates
 
-```bash
-pnpm theme:create
-```
+Retypeset releases [new features](https://github.com/radishzzz/astro-theme-retypeset/issues/18) from time to time. Simply run `pnpm update-theme` to update the theme. If you encounter merge conflicts, please refer to [this video](https://youtu.be/lz5OuKzvadQ?si=sH_ALNgqxrYqNVQT) for manual resolution.
 
-## Updating the theme
+## Credits
 
-You can simply [`Sync Fork`](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) on your own forked project (do not click Discard Changes, otherwise you will lose your own changes).
+- [Typography](https://github.com/moeyua/astro-theme-typography)
+- [Fuwari](https://github.com/saicaca/fuwari)
+- [Redefine](https://github.com/EvanNotFound/hexo-theme-redefine)
+- [AstroPaper](https://github.com/satnaing/astro-paper)
+- [heti](https://github.com/sivan/heti)
+- [EarlySummerSerif](https://github.com/GuiWonder/EarlySummerSerif)
 
-## Customization
+## Star History
 
-Typography is highly customizable. The default configuration file is [src/.config/default.ts](src/.config/default.ts), you can override the default configuration in [src/.config/user.ts](src/.config/user.ts) as needed.
-
-### Social links
-
-Typography has built-in support for adding links to your social media accounts to the site via the social option in the config file:
-
-```ts
-socials: [
-  {
-    name: 'github',
-    href: 'https://github.com/moeyua/astro-theme-typography'
-  }
-]
-```
-
-The `name` is the icon name in [Material Design Icons](https://pictogrammers.com/library/mdi/),
-which will be automatically generated as the icon.
-
-> Note that you need to restart the development server to see the changes.
-
-### Navigation links
-
-By default, the navigation are `Posts`, `Archive`, `Categories` and `About`. You can add more in the config file:
-
-```ts
-{
-  navs: [
-    {
-      name: 'Categories',
-      href: '/categories'
-    }
-  ]
-}
-```
-
-And then add the corresponding page in `src/pages`, see more in [Astro Pages](https://docs.astro.build/en/core-concepts/astro-pages/)
-
-### Dark mode
-
-Typography supports dark mode. You can change it in the config file:
-
-```ts
-themeStyle: 'dark' // 'light' | 'dark' | 'system'
-```
-
-### Internationalization (i18n)
-
-Typography provides built-in support for multilingual sites. By default, the language is `en-us`, you can change it in the config file:
-
-```ts
-locale: 'zh-cn'
-```
-
-For now, Typography supports below languages:
-
-- `en-us`
-- `zh-cn`
-- `zh-tw`
-- `ja-jp`
-- `it-it`
-
-You can see all supported languages in [src/i18n.ts](src/i18n.ts), and add more if you need.
-
-### Comment
-
-Typography supports multiple comment services, currently supports [Disqus](https://disqus.com/), [Giscus](https://giscus.app/) and [Twikoo](https://twikoo.js.org/).
-
-Enable the corresponding comment service by adding the configuration to the config file, when you fill in multiple comment services, only the first service will be displayed.
-
-#### Disqus
-
-You can enable Disqus by adding the following configuration to the config file:
-
-```ts
-comments: {
-  disqus: {
-    shortname: 'your-disqus-shortname'
-  }
-}
-```
-
-#### Giscus
-
-Based on the [Giscus web component](https://github.com/giscus/giscus-component?tab=readme-ov-file#using-the-web-component) implementation.
-
-The prop names are the same as the data- attributes shown on the [giscus website](<(https://giscus.app/)>), but written in camelCase with the data- prefix and dashes removed.
-
-You can enable Giscus by adding the following configuration to the config file:
-
-```ts
-{
-  comments: {
-    giscus: {
-      repo: 'moeyua/astro-theme-typography'
-      repoId: 'R_kgDOKy9HOQ'
-      category: 'General'
-      categoryId: 'DIC_kwDOKy9HOc4CegmW'
-      mapping: 'title'
-      strict: '0'
-      reactionsEnabled: '1'
-      emitMetadata: '1'
-      inputPosition: 'top'
-      theme: 'light'
-      lang: 'zh-CN'
-      loading: 'lazy'
-    }
-  }
-}
-```
-
-#### Twikoo
-
-You can enable Twikoo by adding the following configuration to the config file:
-
-```ts
-{
-  comments: {
-    twikoo: {
-      envId: 'your-env-id'
-    }
-  }
-}
-```
-
-## Pagespeed Score
-
-[![Pagespeed Score](https://github.com/moeyua/astro-theme-typography/assets/45156493/2272f576-d6ff-49ef-a294-5c2acf365907)](https://pagespeed.web.dev/analysis/https-astro-theme-typography-vercel-app/j34nq9tx0s?form_factor=desktop)
-
-## TODO
-
-- [ ] WebSub
-- [x] comment
-- [ ] search
-- [ ] analytics
+<p align="center">
+<a href="https://star-history.com/#radishzzz/astro-theme-retypeset&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=radishzzz/astro-theme-retypeset&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=radishzzz/astro-theme-retypeset&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=radishzzz/astro-theme-retypeset&type=Date" />
+  </picture>
+</p>
