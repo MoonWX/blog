@@ -1,0 +1,47 @@
+---
+import { getCollection, render } from 'astro:content'
+import { defaultLocale, moreLocales } from '@/config'
+import Layout from '@/layouts/Layout.astro'
+
+export async function getStaticPaths() {
+  type PathItem = {
+    params: { friends: string }
+    props: { lang: string }
+  }
+
+  const paths: PathItem[] = []
+
+  // Default locale
+  paths.push({
+    params: { friends: 'friends/' },
+    props: { lang: defaultLocale },
+  })
+
+  // More locales
+  moreLocales.forEach((lang: string) => {
+    paths.push({
+      params: { friends: `${lang}/friends/` },
+      props: { lang },
+    })
+  })
+
+  return paths
+}
+
+const { lang } = Astro.props
+
+// Get friends page content with different language
+const allfriendsEntries = await getCollection('friends')
+const friendsEntry = allfriendsEntries.find(entry => entry.data.lang === lang)
+  ?? allfriendsEntries.find(entry => entry.data.lang === '')
+const { Content } = friendsEntry ? await render(friendsEntry) : { Content: null }
+---
+
+<Layout>
+  <!-- Decorative Line -->
+  <div class="uno-decorative-line" />
+  <!-- friends Page Content -->
+  <div class="heti">
+    {Content && <Content />}
+  </div>
+</Layout>

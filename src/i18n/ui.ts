@@ -15,6 +15,7 @@ export const ui = {
     posts: 'Posts',
     tags: 'Tags',
     about: 'About',
+    friends: 'Friends',
     toc: 'Table of Contents',
   },
   // 'es': {
@@ -87,6 +88,7 @@ export const ui = {
     posts: '文章',
     tags: '标签',
     about: '关于',
+    friends: '友链',
     toc: '目录',
   },
   // 'zh-tw': {
