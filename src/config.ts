@@ -84,12 +84,12 @@ export const themeConfig: ThemeConfig = {
     giscus: {
       repo: 'MoonWX/blog',
       repoId: 'R_kgDOPzIVfg',
-      category: 'Show and tell',
-      categoryId: 'DIC_kwDOPzIVfs4CxFwy',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOPzIVfs4CxFwu',
       mapping: 'pathname',
       strict: '0',
       reactionsEnabled: '1',
-      emitMetadata: '0',
+      emitMetadata: '1',
       inputPosition: 'top',
     },
     // // twikoo
