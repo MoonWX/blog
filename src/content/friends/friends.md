@@ -1,5 +1,6 @@
 # 朋友们
 - HakoChest - [https://blog.hakochest.cn](https://blog.hakochest.cn)  - 海底、骤雨、回忆之中
+- Sisy - [https://blog.sisy.cc](https://blog.sisy.cc) - Live happily!
 
 ## 交换友链
 
